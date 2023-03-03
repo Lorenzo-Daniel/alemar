@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import HomeBanner from './HomeBanner';
 import banner2 from '../../Images/Banner/banner-4.jpg'
 import palacio from '../../Images/Logos/el-fogon.png'
-import GaleriaHome from './GaleriaHome';
 import NuestrosClientes from '../../componentes/NuestrosClientes/NuestrosClientes';
 function Home() {
     const [widthMobile, setWidthMobile] = useState()
@@ -13,13 +12,13 @@ function Home() {
         console.log(widthScreen);
     }, [widthMobile])
 
-    const changeWidth = () => {
-        if (window.innerWidth < 1025) {
-            setWidthMobile(false)
-        } else {
-            setWidthMobile(true)
-        }
-    }
+    // const changeWidth = () => {
+    //     if (window.innerWidth < 1025) {
+    //         setWidthMobile(false)
+    //     } else {
+    //         setWidthMobile(true)
+    //     }
+    // }
     // window.addEventListener('resize', changeWidth)
 
     return (
