@@ -32,15 +32,19 @@
   }
   .home-banner .text {
     position: absolute;
-    top: 85%;
+    top: 9%;
     right: 0px;
     left: 0px;
     color: white;
-    padding: 10px;
+    padding: 0px 10px;
   }
   .home-banner .text-1 {
     background-color: rgba(3, 3, 3, 0.7333333333);
-    padding: 15px;
+    padding: 15px 0px;
+  }
+  .home-banner .text-1 h3 {
+    font-size: 18px;
+    margin: 0px;
   }
   .home-banner .arrow-box {
     position: absolute;
@@ -65,9 +69,6 @@
   .home-banner .arrow-box button:disabled:hover,
   .home-banner .arrow-box input:disabled:hover {
     color: rgba(255, 255, 255, 0.5);
-  }
-  .home-banner .arrow-box .numbers:checked {
-    color: green;
   }
   .home-banner .bimg {
     background-repeat: no-repeat;
@@ -334,19 +335,41 @@
 
 .floatContact_whatsapp {
   position: fixed;
-  left: 10px;
+  background-color: white;
+  padding: 4px 5px 4px 5px;
+  border-radius: 1000px;
+  left: 3px;
 }
 .floatContact_whatsapp i {
-  color: green;
+  color: white;
+  border-radius: 100px;
+  background-color: green;
+  padding: 3px 5px 3px 5px;
+}
+
+.asesoramiento {
+  position: fixed;
+  background-color: white;
+  padding: 4px 5px 4px 5px;
+  border-radius: 1000px;
+  right: 3px;
+}
+.asesoramiento i {
+  color: white;
+  border-radius: 100px;
+  background-color: green;
+  padding: 3px 5px 3px 5px;
 }
 
 .presupuesto {
   position: fixed;
   bottom: 0px;
-  padding-bottom: 35px;
+  padding-bottom: 60px;
   right: 0px;
   color: white;
   z-index: 1000;
+  display: flex;
+  align-items: center;
 }
 .presupuesto button {
   color: white;

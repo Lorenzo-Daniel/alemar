@@ -64,7 +64,7 @@ function HomeBanner() {
                 </div>
             </div>
             <div className='arrow-box d-flex justify-content-center w-100'>
-                <div className='d-flex justify-content-evenly col-8 col-sm-4 col-lg-2'>
+                <div className='d-flex justify-content-evenly col-7 col-sm-4 col-lg-2'>
                     <button className='fa-solid fa-arrow-left' disabled={parseInt(picture) === parseInt(1)} onClick={() => arrowLeft(picture)}></button>
                     <div className='numbers'>
                         {value.map((item) => {

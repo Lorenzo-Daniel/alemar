@@ -26,7 +26,7 @@ function Home() {
         <div className='overflow-hidden'>
             <HomeBanner />
             <h2 className='text-center mt-5'>Quienes Somos</h2>
-            <p className='w-50 m-auto text-center'>
+            <p className='w-75 m-auto text-center'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ducimus expedita assumenda excepturi cumque perferendis, eveniet unde exercitationem illum, nesciunt modi molestiae. Quaerat ad perferendis praesentium ducimus laborum, nulla suscipit?
 
             </p>
@@ -34,8 +34,8 @@ function Home() {
                 <h3>Una imagen con una Sanata</h3>
             </div>
             <div className='servicios d-flex flex-column justify-content-center'>
-                <h3 className='text-center fs-1 my-5'>servicios</h3>
-                <div className='d-flex justify-content-evenly '>
+                <h3 className='text-center fs-1 mt-3'>servicios</h3>
+                <div className='d-flex justify-content-around '>
                     <ul className='list-unstyled'>
                         <li><i className='spun fa-solid fa-minus' /> Servicio</li>
                         <li><i className='spun fa-solid fa-minus' />  Servicio</li>
@@ -52,7 +52,7 @@ function Home() {
                     </ul>
                 </div>
             </div>
-            <div className='mt-5'>
+            <div>
                 <h2 className='text-center mb-3'>CLIENTES QUE CONFIAN EN NOSOTROS</h2>
                 <NuestrosClientes />
             </div>
