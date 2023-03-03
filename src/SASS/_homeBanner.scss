@@ -1,0 +1,90 @@
+@media (min-width: 320px) {
+  .home-banner {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    img {
+      height: 100vh;
+      object-fit: cover;
+      // object-position: center;
+    }
+
+    .text {
+      position: absolute;
+      top: 85%;
+      right: 0px;
+      left: 0px;
+      color: white;
+      padding: 10px;
+    }
+    .text-1 {
+      background-color: #030303bb;
+      padding: 15px;
+    }
+    .arrow-box {
+      position: absolute;
+      font-size: 25px;
+      color: white;
+      bottom: 5px;
+      button,
+      input {
+        background-color: transparent;
+        border: none;
+        color: white;
+        &:disabled {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        &:hover {
+          color: violet;
+        }
+        &:disabled:hover {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+      .numbers {
+        &:checked {
+          color: green;
+        }
+      }
+    }
+
+    .bimg {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .bimg-1 {
+      background-image: url("../Images/Banner/banner-1.jpg");
+    }
+    .bimg-2 {
+      background-image: url("../Images/Banner/banner-2.jpg");
+    }
+    .bimg-3 {
+      background-image: url("../Images/Banner/banner-3.jpg");
+    }
+    .bimg-4 {
+      background-image: url("../Images/Banner/banner-4.jpg");
+    }
+    .bimg-5 {
+      background-image: url("../Images/Banner/banner-5.jpg");
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .home-banner {
+    .text {
+      position: absolute;
+      top: 75%;
+      left: 70%;
+      min-width: 400px;
+      max-width: 500px;
+      padding: 10px;
+      h3 {
+        padding:20px;
+      }
+    }
+  }
+}
+

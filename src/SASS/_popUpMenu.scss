@@ -1,0 +1,21 @@
+@media (min-width: 320px) {
+  .popUpMenu {
+    width:100%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    ul {
+      list-style: none;
+      li {
+        font-size: 25px;
+        padding-top: 20px;
+      }
+    }
+  }
+}

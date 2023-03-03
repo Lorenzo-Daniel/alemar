@@ -1,0 +1,25 @@
+.card-marca {
+  display: flex;
+  padding: 5px;
+  background-color: rgba(128, 128, 128, 0.849);
+  aspect-ratio: 4/3;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    max-height: 200px;
+    // filter: invert(0%) sepia(0%) saturate(0%) brightness(80%) contrast(160%);
+    &:hover {
+      filter: none;
+    }
+  }
+}
+.nuestros-clientes {
+  display: flex;
+  margin: 2px;
+  margin: 10px;
+  column-gap: 5px;
+}
+.swiper-pagination-bullet-active {
+  background-color: green !important;
+}

@@ -1,0 +1,25 @@
+@media (min-width: 320px) {
+  .nav-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    img {
+      width: 150px;
+    }
+  }
+  .bg-header {
+    background-color: #383636;
+    align-items: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .nav-bar {
+    img{
+      width: 200px;
+    }
+  }
+} 
