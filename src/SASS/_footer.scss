@@ -2,9 +2,10 @@
   .footer {
     width: 100%;
     padding-top: 25px;
-    background-color: rgba(128, 128, 128, 0.171);
+    background-color: #38363670;
     display: flex;
     flex-direction: column;
+    color: white;
 
     .footer_brand {
       display: flex;
@@ -20,7 +21,7 @@
 
       .footer_social_contact {
         display: flex;
-        width: 80%;
+        width: 70%;
         margin: auto;
         height: 100%;
         justify-content: space-between;
@@ -93,7 +94,6 @@
   .footer {
     width: 100%;
     padding-top: 25px;
-    background-color: rgba(128, 128, 128, 0.171);
     display: flex;
     flex-direction: column;
 

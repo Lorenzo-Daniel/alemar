@@ -22,7 +22,7 @@ function Navbar() {
     return (
         <div>
             <header className='p-0'>
-                <navbar className={hedaerClass
+                <navbar   className={hedaerClass
                     ? 'nav-bar animate__animated'
                     : 'nav-bar bg-header animate__animated animate__fadeIn'}>
                     <Link to='/'>
@@ -32,7 +32,7 @@ function Navbar() {
 
                     <div className='text-white'>
                         <div className='d-flex '>
-                            <h2 className='fs-4 d-none d-lg-block pe-2'>MENÚ</h2>
+                            <h2 className='fs-4 d-none d-lg-block me-2 pe-2'>MENÚ</h2>
                             <i className='fa-solid fa-bars fs-3 fw-ligther' onClick={openPopUpMenu}></i>
                         </div>
                     </div>

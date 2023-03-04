@@ -3,22 +3,23 @@
 @import "_popUpMenu";
 @import "_nuestrosClientes";
 @import "_footer";
+@import "_contacto";
 
 * {
   box-sizing: border-box;
 }
 
-.floatContact_whatsapp{
+.floatContact_whatsapp {
   position: fixed;
   background-color: white;
   padding: 4px 5px 4px 5px;
   border-radius: 1000px;
-  left: 3px;
-  i{
-    color:white;
+  left: 0px;
+  i {
+    color: white;
     border-radius: 100px;
     background-color: green;
-    padding: 3px 5px 3px 5px;
+    padding: 3px 8px 3px 8px;
   }
 }
 .asesoramiento {
@@ -26,9 +27,9 @@
   background-color: white;
   padding: 4px 5px 4px 5px;
   border-radius: 1000px;
-  right: 3px;
-  i{
-    color:white;
+  right: 0px;
+  i {
+    color: white;
     border-radius: 100px;
     background-color: green;
     padding: 3px 5px 3px 5px;
@@ -39,13 +40,13 @@
   position: fixed;
   bottom: 0px;
   padding-bottom: 60px;
-  right:0px;
+  right: 0px;
   color: white;
   z-index: 1000;
-  display: flex ;
+  display: flex;
   align-items: center;
   button {
-    color:white;
+    color: white;
     background-color: green;
   }
 }
@@ -53,7 +54,6 @@
   color: white;
   text-decoration: none;
 }
-
 
 .uno {
   width: 24.8%;
@@ -199,7 +199,7 @@
 
 .card_trabajos {
   position: relative;
-  width: 15%;
+  width: 50%;
   aspect-ratio: 4/3;
   margin: auto;
   margin-top: 100px;
@@ -223,7 +223,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 96%;
+    height: 92%;
     background-color: rgba(128, 128, 128, 0.322);
     top: 0px;
     left: 0px;
@@ -239,3 +239,5 @@
     }
   }
 }
+
+

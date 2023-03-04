@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer className='footer'>
             <div className='footer_brand'>
-                <img src='/images/logos/alemarLogo-blanco-1.png' alt="" width={250} />
+                <img src='/images/logos/alemarLogo-blanco-1.png' alt="" width={220} />
                 <p className='m-0'>Soluciones integrales en Madera</p>
             </div>
             <div className='footer-content'>

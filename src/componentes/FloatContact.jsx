@@ -8,7 +8,7 @@ function FloatContact() {
                     <i className="fa-brands fa-whatsapp fs-3"></i>
                 </a>
             </div>
-            <Link to={'/asesoramiento'} className='link asesoramiento'>
+            <Link to={'/contacto'} className='link asesoramiento'>
                 {/* <button className='d-flex align-items-center'>
                         Asesoramiento
                 </button> */}
