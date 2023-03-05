@@ -45,6 +45,7 @@ function Contacto() {
                         </label>
                     </div>
                     <input type="button" value="Enviar" />
+                    <input type="file" />
                 </form>
                 <aside className='contacto_form-aside'>
                     <div>

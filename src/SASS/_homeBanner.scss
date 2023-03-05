@@ -1,34 +1,29 @@
 @media (min-width: 320px) {
   .home-banner {
     width: 100vw;
-    height: 100vh;
     position: relative;
     img {
-      height: 100vh;
-      object-fit: cover;
-      // object-position: center;
+      min-height: 400px;
     }
 
-    .text {
+    .home-banner-text {
       position: absolute;
-      top: 0;
-      right: 0px;
-      left: 0px;
+      width: 70%;
+      top: 25%;
+      right: 15%;
       color: white;
-      padding: 0px 10px;
-      margin-top: 50px;
     }
-    .text-1 {
+    .home-banner-text-1 {
       background-color: #030303bb;
-      padding: 15px 0px;
-      h3{
+      padding: 10px 5px;
+      h3 {
         font-size: 18px;
         margin: 0px;
       }
     }
     .arrow-box {
       position: absolute;
-      font-size: 25px;
+      font-size: 18px;
       color: white;
       bottom: 5px;
       button,
@@ -39,48 +34,72 @@
         &:disabled {
           color: rgba(255, 255, 255, 0.5);
         }
-             &:disabled:hover {
+        &:disabled:hover {
           color: rgba(255, 255, 255, 0.5);
         }
       }
     }
 
-    .bimg {
+    .home-banner-bg-img-box {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
     }
 
-    .bimg-1 {
+    .home-banner-bg-img-1 {
       background-image: url("../Images/Banner/banner-1.jpg");
     }
-    .bimg-2 {
+    .home-banner-bg-img-2 {
       background-image: url("../Images/Banner/banner-2.jpg");
     }
-    .bimg-3 {
+    .home-banner-bg-img-3 {
       background-image: url("../Images/Banner/banner-3.jpg");
     }
-    .bimg-4 {
+    .home-banner-bg-img-4 {
       background-image: url("../Images/Banner/banner-4.jpg");
     }
-    .bimg-5 {
+    .home-banner-bg-img-5 {
       background-image: url("../Images/Banner/banner-5.jpg");
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .home-banner {
+    img {
+      height: 500px;
     }
   }
 }
 
 @media (min-width: 992px) {
   .home-banner {
-    .text {
-      position: absolute;
-      top: 75%;
-      left: 70%;
-      min-width: 400px;
-      max-width: 500px;
-      padding: 10px;
+    height: 100vh;
+    img {
+      height: 100vh;
+    }
+    .home-banner-text {
+      width: 30%;
+      top: 80%;
+      right: 5%;
       h3 {
-        padding: 20px;
+        padding: 10px;
       }
+    }
+    .arrow-box {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .home-banner {
+    .home-banner-text {
+      width: 25%;
+      top: 85%;
+    }
+    .arrow-box {
+      font-size: 25px;
     }
   }
 }

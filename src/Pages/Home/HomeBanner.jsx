@@ -3,24 +3,20 @@ import React, { useState, useEffect } from 'react'
 function HomeBanner() {
     const [picture, setpicture] = useState(parseInt(1));
     const [animacion, setAnimacion] = useState('')
-    const [width, setWidth] = useState();
+    const [dnone, setDnone] = useState('')
     const [textCard, setTextCard] = useState(0)
     const value = [1, 2, 3, 4, 5]
-    const texto = [
+    const bannerText = [
         'Soluciones Integrales en Madera', 'Muebles para el hogar', 'Equipamiento Cocinas', 'Equipamientos Industriales', 'Muebles Rusticos']
 
     useEffect(() => {
-        widthScreen()
-    }, [width,picture,textCard])
-
-    const widthScreen = () => {
-        if (window.innerWidth > 394) {
-            setWidth(true)
+        if (textCard === 0) {
+            setDnone('d-none')
         } else {
-            setWidth(false)
+            setDnone('')
         }
-    }
-    window.addEventListener('resize', widthScreen)
+    }, [picture, textCard])
+
 
     const arrowrigth = () => {
         if (picture <= 4) {
@@ -33,10 +29,10 @@ function HomeBanner() {
         }
     }
     const arrowLeft = () => {
-        if (picture <= 5) {           
-             setpicture(parseInt(picture) - parseInt(1))
-             setTextCard(prev => prev - 1)
-             setAnimacion('animate__animated animate__fadeIn')
+        if (picture <= 5) {
+            setpicture(parseInt(picture) - parseInt(1))
+            setTextCard(prev => prev - 1)
+            setAnimacion('animate__animated animate__fadeIn')
             setTimeout(() => {
                 setAnimacion('')
             }, 1000)
@@ -53,13 +49,13 @@ function HomeBanner() {
     }
     return (
         <div className='home-banner'>
-            <div className={`bimg bimg-${picture} ${animacion} `}>
-                <img alt="" className='img-fluid' />
+            <div className={`home-banner-bg-img-box home-banner-bg-img-${picture} ${animacion} `}>
+                <img alt={''} className='img-fluid' />
             </div>
-            <div className='text'>
-                <div className='text-1'>
-                    <h3 className='text-center'>
-                        {texto[textCard]}
+            <div className={`home-banner-text ${dnone}`}>
+                <div className='home-banner-text-1'>
+                    <h3 className={`text-center ${dnone}`}>
+                        {bannerText[textCard]}
                     </h3>
                 </div>
             </div>
